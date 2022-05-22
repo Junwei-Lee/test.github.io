@@ -29,10 +29,14 @@
   </head>
   <body>
     <div class="wapper">
-      <a
-        class="link"
-        href="https://junwei-lee.github.io/test.github.io/index2.html"
-      ></a>
+      <div class="link"></div>
     </div>
+    <script>
+      document.querySelector(".link").addEventListener("click", () => {
+        window.location.replace(
+          "https://junwei-lee.github.io/test.github.io/index2.html"
+        );
+      });
+    </script>
   </body>
 </html>
