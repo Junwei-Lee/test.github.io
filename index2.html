@@ -31,12 +31,22 @@
         top: 610px;
         font-size: 14px;
       }
+      .link {
+        display: block;
+        width: 60px;
+        height: 80px;
+        position: absolute;
+        left: 222px;
+        top: 159px;
+        background: rgba(0,0,0,.3);
+      }
     </style>
   </head>
   <body>
     <div class="wapper">
       <div class="clock"></div>
       <div class="time">2022-05-22 15:19:20</div>
+      <div class="link"></div>
     </div>
 
     <script>
@@ -73,6 +83,11 @@
         var clock = new Date().format("hh:mm:ss");
         document.querySelector(".clock").innerHTML = clock;
       }, 1000);
+      document.querySelector(".link").addEventListener("click", () => {
+        window.location.replace(
+          "https://junwei-lee.github.io/test.github.io/index1.html"
+        );
+      });
     </script>
   </body>
 </html>
