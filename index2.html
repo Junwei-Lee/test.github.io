@@ -67,6 +67,8 @@
       };
       var time = new Date().format("yyyy-MM-dd hh:mm:ss");
       document.querySelector(".time").innerHTML = time;
+      var clock = new Date().format("hh:mm:ss");
+      document.querySelector(".clock").innerHTML = clock;
       setInterval(() => {
         var clock = new Date().format("hh:mm:ss");
         document.querySelector(".clock").innerHTML = clock;
